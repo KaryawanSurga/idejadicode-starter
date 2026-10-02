@@ -1,4 +1,4 @@
-# Base Postgres — ngodingpakeai starters
+# Base Postgres — Idejadicode starters
 
 The PostgreSQL edition of the base starter: **Next.js, Drizzle ORM, PostgreSQL, Better Auth, Tailwind CSS, shadcn/ui, and Motion**. It includes working accounts, a blank protected app, an authenticated Notes API demonstrating the backend standard, project skills, and Context7 configuration.
 
