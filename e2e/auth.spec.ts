@@ -87,7 +87,7 @@ test("welcome and auth pages fit a narrow screen and prompt copying works", asyn
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: "A small base. A world of ideas." }),
+    page.getByRole("heading", { name: /Ideas become code/ }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Copy prompt" }).click();
   await expect(
@@ -102,7 +102,8 @@ test("welcome and auth pages fit a narrow screen and prompt copying works", asyn
     ),
   ).toBe(true);
   await page
-    .getByRole("link", { name: "Create an account", exact: true })
+    .getByRole("link", { name: "Create your account", exact: true })
+    .first()
     .click();
   await expect(page.getByLabel("Email", { exact: true })).toBeVisible();
   expect(
