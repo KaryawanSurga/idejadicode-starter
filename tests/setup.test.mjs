@@ -45,7 +45,7 @@ test("first-run setup creates independent local secrets and is repeatable", () =
     assert.match(first, /BETTER_AUTH_SECRET="[a-f0-9]{64}"/);
     assert.match(first, /POSTGRES_PASSWORD="[a-f0-9]{48}"/);
     assert.match(first, /DATABASE_URL="postgresql:\/\/starter:/);
-    assert.match(first, /COMPOSE_PROJECT_NAME="ngodingpakeai-pg-/);
+    assert.match(first, /COMPOSE_PROJECT_NAME="idejadicode-pg-/);
     prepare(cwd);
     assert.equal(readFileSync(resolve(cwd, ".env.local"), "utf8"), first);
   } finally {

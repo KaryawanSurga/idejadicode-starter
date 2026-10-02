@@ -64,7 +64,7 @@ export async function prepareEnvironment(cwd = root) {
         process.env.POSTGRES_PORT || String(await availablePostgresPort()),
       COMPOSE_PROJECT_NAME:
         process.env.COMPOSE_PROJECT_NAME ||
-        `ngodingpakeai-pg-${randomBytes(6).toString("hex")}`,
+        `idejadicode-pg-${randomBytes(6).toString("hex")}`,
     };
     if (
       !/^\d+$/.test(local.POSTGRES_PORT) ||

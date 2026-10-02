@@ -106,7 +106,7 @@ try {
   if (existsSync(envFile)) {
     // Only this fresh copy's generated project can be removed by this check.
     const project = readFileSync(envFile, "utf8").match(
-      /^COMPOSE_PROJECT_NAME="(ngodingpakeai-pg-[a-f0-9]{12})"$/m,
+      /^COMPOSE_PROJECT_NAME="(idejadicode-pg-[a-f0-9]{12})"$/m,
     )?.[1];
     if (project) {
       const result = spawnSync(

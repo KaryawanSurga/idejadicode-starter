@@ -67,13 +67,13 @@ test("a derivative preserves base files and provenance while excluding local sta
     );
     assert.equal(
       JSON.parse(readFileSync(resolve(target, "package.json"))).name,
-      "ngodingpakeai-dashboard",
+      "idejadicode-dashboard",
     );
     assert.equal(
       JSON.parse(readFileSync(resolve(target, "package-lock.json"))).packages[
         ""
       ].name,
-      "ngodingpakeai-dashboard",
+      "idejadicode-dashboard",
     );
     assert.equal(
       JSON.parse(readFileSync(resolve(target, "starter.config.json")))

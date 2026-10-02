@@ -145,7 +145,7 @@ export function createVariant(slug, destination, sourceRoot = root) {
     description: `${title}, built on the base starter.`,
   });
   const pkg = readJson("package.json");
-  pkg.name = `ngodingpakeai-${slug}`;
+  pkg.name = `idejadicode-${slug}`;
   writeJson("package.json", pkg);
   if (existsSync(resolve(target, "package-lock.json"))) {
     const lock = readJson("package-lock.json");
