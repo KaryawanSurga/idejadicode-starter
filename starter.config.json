@@ -1,7 +1,7 @@
 {
   "id": "postgres",
-  "name": "Base Postgres",
-  "description": "An AI-friendly foundation with Drizzle and PostgreSQL.",
+  "name": "Idejadicode",
+  "description": "Turn plain-language ideas into working software, with AI agents.",
   "baseVersion": "0.1.0",
   "database": "postgresql"
 }
